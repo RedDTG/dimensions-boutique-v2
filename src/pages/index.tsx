@@ -3,6 +3,11 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
+import Img1 from 'src/img/img1.jpg'
+import Img2 from 'src/img/carousel2.jpg'
+import Img3 from 'src/img/carousel3.jpg'
+import Img4 from 'src/img/carousel4.jpg'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -14,109 +19,163 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
+      <main className='mt-20'>
+        {/* <div className="carousel w-full">
+          <div id="item1" className="carousel-item w-full">
+            <Image src={Img1} alt="logo" placeholder='blur' className='w-full'/>
+          </div>
+          <div id="item2" className="carousel-item w-full">
+            <Image src={Img2} alt="logo" placeholder='blur' className='w-full'/>
+          </div>
+          <div id="item3" className="carousel-item w-full">
+            <Image src={Img3} alt="logo" placeholder='blur' className='w-full'/>
+          </div>
+          <div id="item4" className="carousel-item w-full">
+            <Image src={Img4} alt="logo" placeholder='blur' className='w-full'/>
+          </div>
+          <div className="absolute flex justify-center w-full py-2 gap-2 bottom-16">
+            <a href="#item1" className="btn btn-xs">1</a>
+            <a href="#item2" className="btn btn-xs">2</a>
+            <a href="#item3" className="btn btn-xs">3</a>
+            <a href="#item4" className="btn btn-xs">4</a>
+          </div>
+        </div> */}
+
+        <Image src={Img1} width={8000} height={2700} alt="T-shirt background" className='w-full' />
+
+        <div className='w-full py-28'>
+          <h1 className='text-5xl font-bold text-center pb-24'>Dimensions - Boutique officielle</h1>
+
+          <p className='mx-48 text-center'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+            numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+            optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+            obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+            nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+            tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
+            sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+            recusandae alias error harum maxime adipisci amet laborum. Perspiciatis
+            minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit
+            quibusdam sed amet tempora. Sit laborum ab, eius fugit doloribus tenetur
+            fugiat, temporibus enim commodi iusto libero magni deleniti quod quam
+            consequuntur! Commodi minima excepturi repudiandae velit hic maxime
+            doloremque. Quaerat provident commodi consectetur veniam similique ad
+            earum omnis ipsum saepe, voluptas, hic voluptates pariatur est explicabo
+            fugiat, dolorum eligendi quam cupiditate excepturi mollitia maiores labore
+            suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
+            modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam
+            totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam
+            quasi aliquam eligendi, placeat qui corporis!
           </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+        </div>
+
+        <div className="divider"><h2 className='text-3xl font-bold w-full text-center py-16'>Nouveautés 2023</h2></div>
+
+
+
+        <div className='flex justify-center flex-row py-20 w-full flex-wrap gap-5'>
+          <div className="card card-compact w-96 bg-base-100 shadow-xl border-2 border-base-300">
+            <figure><Image src="https://zupimages.net/up/22/11/mlw1.png" width={2000} height={1000} alt="T-shirt Officiel Dimensions" className='w-full' /></figure>
+            <div data-theme="dark" className="card card-body absolute opacity-0 hover:opacity-100 hover:bg-opacity-90 h-full w-full bg-base-200 text-gray-200">
+              <h2 className="card-title">T-shirt Officiel DIMENSIONS</h2>
+              <p>Le t-shirt officiel de notre serveur ! Tout membre qui se respecte se doit de le posséder !</p>
+              <div className="card-actions justify-end">
+                <div className="badge badge-outline">Gris</div>
+                <div className="badge badge-outline">Blanc</div>
+              </div>
+            </div>
+          </div>
+          <div className="card card-compact w-96 bg-base-100 shadow-xl border-2 border-base-300">
+            <figure><Image src="https://zupimages.net/up/22/11/gl3d.png" width={2000} height={1000} alt="T-shirt Logo Poitrine" className='w-full' /></figure>
+            <div data-theme="dark" className="card card-body absolute opacity-0 hover:opacity-100 hover:bg-opacity-90 h-full w-full bg-base-200 text-gray-200">
+              <h2 className="card-title">T-shirt Logo Poitrine</h2>
+              <p>Un t-shirt discret avec seulement notre logo. Le design passe partout pour n&apos;importe laquelle de vos journée !</p>
+              <div className="card-actions justify-end">
+                <div className="badge badge-outline">Gris</div>
+                <div className="badge badge-outline">Blanc</div>
+              </div>
+            </div>
+          </div>
+          <div className="card card-compact w-96 bg-base-100 shadow-xl border-2 border-base-300">
+            <figure><Image src="https://zupimages.net/up/22/11/kwih.png" width={2000} height={1000} alt="T-shirt Good, Bad, Ugly" className='w-full' /></figure>
+            <div data-theme="dark" className="card card-body absolute opacity-0 hover:opacity-100 hover:bg-opacity-90 h-full w-full bg-base-200 text-gray-200">
+              <h2 className="card-title">T-shirt Good, Bad, Ugly</h2>
+              <p>Tandis que l&apos;un essayait de sauver Discordia, un autre essayait de le faire sombrer pour s&apos;amuser, pendant que le dernier ne voulait que la dystopie. Un climat bien étrange pour un serveur Discord !</p>
+              <div className="card-actions justify-end">
+                <div className="badge badge-outline">Noir</div>
+                <div className="badge badge-outline">Blanc</div>
+              </div>
+            </div>
+          </div>
+          <div className="card card-compact w-96 bg-base-100 shadow-xl border-2 border-base-300">
+            <figure><Image src="https://zupimages.net/up/22/11/ztwh.png" width={2000} height={1000} alt="T-shirt Keep Calm And Wait For" className='w-full' /></figure>
+            <div data-theme="dark" className="card card-body absolute opacity-0 hover:opacity-100 hover:bg-opacity-90 h-full w-full bg-base-200 text-gray-200">
+              <h2 className="card-title">T-shirt Keep Calm And Wait For...</h2>
+              <p>Ce serveur a vu de nombreux projets voir le jour... ou pas ! Un certain membre collectionne d&apos;ailleurs les projets mis sur le banc de touche. T&apos;inquiètes pas Bartho, ce running gag s&apos;arrêtera un jour... ou pas !</p>
+              <div className="card-actions justify-end">
+                <div className="badge badge-outline">Noir</div>
+                <div className="badge badge-outline">Blanc</div>
+              </div>
+            </div>
+          </div>
+          <div className="card card-compact w-96 bg-base-100 shadow-xl border-2 border-base-300">
+            <figure><Image src="https://zupimages.net/up/22/11/rbao.png" width={2000} height={1000} alt="T-shirt Bidoof Civilisation" className='w-full' /></figure>
+            <div data-theme="dark" className="card card-body absolute opacity-0 hover:opacity-100 hover:bg-opacity-90 h-full w-full bg-base-200 text-gray-200">
+              <h2 className="card-title">T-Shirt Bidoof Civilisation</h2>
+              <p>Le grand 10E BIDOOF revient pour instaurer son autorité sur le monde ! Il en profite sortir un tout nouvel album ! Étrange façon de conquérir le monde mais pourquoi pas après tout !</p>
+              <div className="card-actions justify-end">
+                <div className="badge badge-outline">Noir</div>
+                <div className="badge badge-outline">Blanc</div>
+              </div>
+            </div>
+          </div>
+          <div className="card card-compact w-96 bg-base-100 shadow-xl border-2 border-base-300">
+            <figure><Image src="https://zupimages.net/up/22/11/4lda.png" width={2000} height={1000} alt="T-shirt RED Dead Redemption" className='w-full' /></figure>
+            <div data-theme="dark" className="card card-body absolute opacity-0 hover:opacity-100 hover:bg-opacity-90 h-full w-full bg-base-200 text-gray-200">
+              <h2 className="card-title">T-Shirt RED Dead Redemption</h2>
+              <p>Toujours présent pour vous faire manger les pissenlits par la racine, ce fou du marteau a sorti son six coups, et c&apos;est pas pour faire des crêpes !</p>
+              <div className="card-actions justify-end">
+                <div className="badge badge-outline">Rouge</div>
+                <div className="badge badge-outline">Blanc</div>
+              </div>
+            </div>
+          </div>
+          <div className="card card-compact w-96 bg-base-100 shadow-xl border-2 border-base-300">
+            <figure><Image src="https://zupimages.net/up/22/11/uxuf.png" width={2000} height={1000} alt="T-shirt Spica Gang" className='w-full' /></figure>
+            <div data-theme="dark" className="card card-body absolute opacity-0 hover:opacity-100 hover:bg-opacity-90 h-full w-full bg-base-200 text-gray-200">
+              <h2 className="card-title">T-Shirt Spica Gang</h2>
+              <p>Le Spica Gang n&apos;est pas mort ! Il continue d&apos;exister à travers tout ceux qui y croient encore ! Comment ça c&apos;était pas la même timeline ? Comment ça c&apos;est pas canon ? Rien ne nous empêchera d&apos;espérer !</p>
+              <div className="card-actions justify-end">
+                <div className="badge badge-outline">Blanc chiné</div>
+                <div className="badge badge-outline">Blanc</div>
+              </div>
+            </div>
+          </div>
+          <div className="card card-compact w-96 bg-base-100 shadow-xl border-2 border-base-300">
+            <figure><Image src="https://zupimages.net/up/22/11/jrtp.png" width={2000} height={1000} alt="T-shirt Vsquad" className='w-full' /></figure>
+            <div data-theme="dark" className="card card-body absolute opacity-0 hover:opacity-100 hover:bg-opacity-90 h-full w-full bg-base-200 text-gray-200">
+              <h2 className="card-title">T-Shirt Vsquad</h2>
+              <p>Tout le monde sait qu&apos;elle existe mais personne n&apos;ose en parler. Ils se tapissent dans l&apos;ombre, préfèreront regarder un énième CGDCT plutôt que la masterclass de l&apos;année. Oui, ce t-shirt est un indispensable pour chaque membre de la Vsquad !</p>
+              <div className="card-actions justify-end">
+                <div className="badge badge-outline">Blanc chiné</div>
+                <div className="badge badge-outline">Blanc</div>
+              </div>
+            </div>
+          </div>
+          <div className="card card-compact w-96 bg-base-100 shadow-xl border-2 border-base-300">
+            <figure><Image src="https://zupimages.net/up/22/14/x6uw.jpg" width={1000} height={1000} alt="Stickers brillants Dimensions" className='w-full' /></figure>
+            <div data-theme="dark" className="card card-body absolute opacity-0 hover:opacity-100 hover:bg-opacity-90 h-full w-full bg-base-200 text-gray-200">
+              <h2 className="card-title">Stickers Brillants DIMENSIONS</h2>
+              <p>Un lot de 10 stickers flamboyants à coller n&apos;importe où ! Avec leurs fonds gris brillant, ils éblouiront tous ceux qui poseront leur regard sur eux !</p>
+              <div className="card-actions justify-end">
+                <div className="badge badge-outline">Lot de 10</div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
       </main>
     </>
   )
