@@ -1,0 +1,24 @@
+{
+    "colors": [
+        {
+            "id": 0,
+            "name": "Noir"
+        },
+        {
+            "id": 1,
+            "name": "Blanc"
+        },
+        {
+            "id": 2,
+            "name": "Gris"
+        },
+        {
+            "id": 3,
+            "name": "Blanc chiné"
+        },
+        {
+            "id": 4,
+            "name": "Rouge"
+        }
+    ]
+}
