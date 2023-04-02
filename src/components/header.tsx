@@ -1,17 +1,16 @@
 import Link from "next/link";
 import Image from 'next/image'
-import Logo from 'src/images/logo.png'
 
 export const Header: React.FC = () => {
-    return <header data-theme="dark" className="navbar bg-base-200 fixed top-0 h-20 z-50">
-        <Link className="w-fit ml-8" href="/">
+    return <header data-theme="dark" className="navbar bg-base-200 fixed top-0 h-20 z-50 w-full">
+        <Link className="ml-8 navbar-start" href="/">
             <div className="flex flex-row gap-2 items-center">
-                <Image src={Logo} alt="logo" width={70} height={70} />
+                <Image src="/images/logo.png" alt="logo" width={70} height={70} />
                 <p className="w-full text-center text-xl font-bold">Boutique Officielle</p>
             </div>
         </Link>
 
-        <div className="flex justify-center">
+        <div className="navbar-center">
             <ul className="menu menu-horizontal px-1">
                 <li className="mx-28"><Link href={"/news"}>Nouveautés</Link></li>
                 <li className="mx-28" tabIndex={0}>
@@ -30,5 +29,8 @@ export const Header: React.FC = () => {
                 <li className="mx-28"><Link href={"/collections"}>Collections</Link></li>
             </ul>
         </div>
+
+        <div className="navbar-end"></div>
+        
     </header>;
 }

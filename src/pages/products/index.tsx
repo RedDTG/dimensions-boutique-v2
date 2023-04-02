@@ -3,17 +3,15 @@ import Head from "next/head";
 import useSWR from 'swr';
 
 import { ProductCard } from '@/components/product'
-import Link from "next/link";
-
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 const ProductsIndex: NextPage = () => {
-    const { data, error } = useSWR('/api/product', fetcher);
+    const { data: dataProducts, error: errorProducts } = useSWR('/api/product', fetcher);
 
-    if (error) return <div>Failed to load</div>;
+    if (errorProducts) return <div>Failed to load</div>;
 
-    if (!data) return <div>Loading...</div>;
+    if (!dataProducts) return <div>Loading...</div>;
     return (
         <>
             <Head>
@@ -33,12 +31,12 @@ const ProductsIndex: NextPage = () => {
                 <div className="w-full flex justify-center flex-col pb-36 gap-10">
 
                     <div className='flex justify-center flex-row flex-wrap gap-5'>
-                        {data.map((product: any) => (
+                        {dataProducts.map((product: any) => (
                             <ProductCard key={product.id}
                                 title={product.title}
                                 description={product.description}
-                                imgUrl={product.image}
-                                colors={product.colors}
+                                image={product.image}
+                                versions={product.versions}
                             />
                         ))}
                     </div>

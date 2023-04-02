@@ -2,18 +2,18 @@ import { NextPage } from "next";
 import Head from "next/head";
 import useSWR from 'swr';
 
-import { ProductCard } from '@/components/product'
 import Link from "next/link";
+import { Collection } from "@/components/collection";
 
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 const Collections: NextPage = () => {
-    const { data, error } = useSWR('/api/product', fetcher);
+    const { data: dataCollections, error: errorCollections } = useSWR('/api/collection', fetcher);
 
-    if (error) return <div>Failed to load</div>;
+    if (errorCollections) return <div>Failed to load</div>;
 
-    if (!data) return <div>Loading...</div>;
+    if (!dataCollections) return <div>Loading...</div>;
     return (
         <>
             <Head>
@@ -32,28 +32,11 @@ const Collections: NextPage = () => {
                 </div>
                 <div className="w-full flex justify-center flex-col pb-36 gap-10">
 
-                    <div className="flex flex-col gap-6 pb-8">
-                        <div className="flex justify-center">
-                            <div className="divider w-3/4"><h2 className='text-3xl font-bold w-full text-center'>Tous pour Dimensions</h2></div>
-                        </div>
-
-                        <p className='text-center'>
-                            Dans cette collection, retrouvez vos personnages préférés arborant fièrement leur appartenance à Dimensions !
-                        </p>
-                    </div>
-
-
-                    <div className='flex justify-center flex-row flex-wrap gap-5'>
-                        {data.map((product: any) => (
-                            product.collection?.id == 0 &&
-                            <ProductCard key={product.id}
-                                title={product.title}
-                                description={product.description}
-                                imgUrl={product.image}
-                                colors={product.colors}
-                            />
-                        ))}
-                    </div>
+                    {                        
+                        dataCollections.map((collection: any) => (
+                            <Collection key={collection.id} name={collection.name} description={collection.description} products={collection.products} />
+                        ))
+                    }
 
                     <div className='w-full flex justify-center'>
                         <Link href={"/products"}>

@@ -1,5 +1,9 @@
 {
     "collections": [
-        
+        {
+            "id": 0,
+            "name": "Tous avec Dimensions !",
+            "description": "Dans cette collection, retrouvez vos personnages préférés arborant fièrement leur appartenance à Dimensions !"
+        }
     ]
 }

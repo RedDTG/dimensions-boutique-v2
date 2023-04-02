@@ -20,25 +20,15 @@ export default async function handler(req: any, res: any) {
   const collectionsContent = await fs.readFile(jsonDirectory + '/collections.json', 'utf8');
   const collectionsData = JSON.parse(collectionsContent);
 
-  productsData = {
-    "products": productsData.products.map((product: { colors: any[] }) => ({
+  productsData = productsData.products.map((product: { versions: any[], type: number, collection: number }) => ({
       ...product,
-      colors: product.colors?.map((colorId: any) => (
-        colorsData.colors.find((color: { id: any }) => color.id === colorId)
-      ))
+      versions: product.versions?.map((version: any) => ({
+        ...version,
+        color: colorsData.colors.find((color: { id: any }) => color.id === version.color)
+      })),
+      type: typesData.types.find((type: { id: any }) => type.id === product.type),
+      collection: collectionsData.collections.find((collection: { id: any }) => collection.id === product.collection)
     }))
-  }
-
-  productsData = productsData.products.map((product: { type: number }) => ({
-    ...product,
-    type: typesData.types.find((type: { id: any }) => type.id === product.type)
-  }))
-
-
-  productsData = productsData.map((product: { collection: number }) => ({
-    ...product,
-    collection: collectionsData.collections.find((collection: { id: any }) => collection.id === product.collection)
-  }))
 
   res.status(200).json(productsData);
 

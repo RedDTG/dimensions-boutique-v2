@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import useSWR from 'swr';
 
-import TshirtBg from 'src/images/TshirtBg.jpg'
 import { ProductCard } from '@/components/product'
 import Link from 'next/link';
 
@@ -13,11 +12,11 @@ const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 export default function Home() {
 
-  const { data, error } = useSWR('/api/product', fetcher);
+  const { data: dataProducts, error: errorProducts } = useSWR('/api/product', fetcher);
 
-  if (error) return <div>Failed to load</div>;
+  if (errorProducts) return <div>Failed to load</div>;
 
-  if (!data) return <div>Loading...</div>;
+  if (!dataProducts) return <div>Loading...</div>;
 
   return (
     <>
@@ -49,7 +48,7 @@ export default function Home() {
           </div>
         </div> */}
 
-        <Image src={TshirtBg} width={8000} height={2700} alt="T-shirt background" className='w-full' />
+        <Image src="/images/TshirtBg.jpg" width={8000} height={2700} alt="T-shirt background" className='w-full' />
 
         <div className='w-full py-28'>
           <h1 className='text-5xl font-bold text-center pb-24'>Dimensions - Boutique officielle</h1>
@@ -76,13 +75,13 @@ export default function Home() {
           <div className="divider"><h2 className='text-3xl font-bold w-full text-center'>Nouveautés 2023</h2></div>
 
           <div className='flex justify-center flex-row flex-wrap gap-5'>
-            {data.map((product: any) => (
+            {dataProducts.map((product: any) => (
               product.isNew &&
               <ProductCard key={product.id}
                 title={product.title}
                 description={product.description}
-                imgUrl={product.image}
-                colors={product.colors}
+                image={product.image}
+                versions={product.versions}
               />
             ))}
           </div>
@@ -97,18 +96,18 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full flex justify-center flex-col pt-12 pb-36 gap-10">
+        <div className="w-full flex justify-center flex-col pt-28 pb-36 gap-10">
 
           <div className="divider"><h2 className='text-3xl font-bold w-full text-center'>Les Classiques</h2></div>
 
           <div className='flex justify-center flex-row flex-wrap gap-5'>
-            {data.map((product: any) => (
+            {dataProducts.map((product: any) => (
               product.isPopular &&
               <ProductCard key={product.id}
                 title={product.title}
                 description={product.description}
-                imgUrl={product.image}
-                colors={product.colors}
+                image={product.image}
+                versions={product.versions}
               />
             ))}
           </div>

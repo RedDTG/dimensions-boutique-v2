@@ -4,9 +4,9 @@ import { Footer } from '../components/footer'
 
 export default function Document() {
   return (
-    <Html lang="en" data-theme="light">
+    <Html lang="fr" data-theme="light">
       <Head />
-      <body>
+      <body className='flex flex-col min-h-screen h-auto'>
         <Header />
         <Main />
         <NextScript />

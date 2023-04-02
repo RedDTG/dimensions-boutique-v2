@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Logo from 'src/img/logo.png'
 
 export const Footer: React.FC = () => {
-    return <footer data-theme="dark" className="bg-base-200 footer-center">
+    return <footer data-theme="dark" className="bg-base-200 footer-center mt-auto">
         <div className="footer text-base-content p-10">
             <div>
                 <span className="footer-title">Informations</span>
