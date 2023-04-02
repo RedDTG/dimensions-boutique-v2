@@ -6,7 +6,7 @@
             "collection": null,
             "title": "T-shirt Officiel DIMENSIONS",
             "description": "Le t-shirt officiel de notre serveur ! Tout membre qui se respecte se doit de le posséder !",
-            "image": "officiel_gris.png",
+            "image": "officiel_gris.jpg",
             "versions": [
                 {
                     "color": 1,
@@ -14,7 +14,7 @@
                 },
                 {
                     "color": 2,
-                    "image": "officiel_gris.png"
+                    "image": "officiel_gris.jpg"
                 }
             ],
             "isNew": true,
@@ -126,11 +126,11 @@
             "collection": null,
             "title": "T-Shirt Vsquad",
             "description": "Tout le monde sait qu'elle existe mais personne n'ose en parler. Ils se tapissent dans l'ombre, préfèreront regarder un énième CGDCT plutôt que la masterclass de l'année. Oui, ce t-shirt est un indispensable pour chaque membre de la Vsquad !",
-            "image": "vsquad_blanc.png",
+            "image": "vsquad_blanc.jpg",
             "versions": [
                 {
                     "color": 1,
-                    "image": "vsquad_blanc.png"
+                    "image": "vsquad_blanc.jpg"
                 },
                 {
                     "color": 3,
