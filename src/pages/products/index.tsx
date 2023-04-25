@@ -33,10 +33,7 @@ const ProductsIndex: NextPage = () => {
                     <div className='flex justify-center flex-row flex-wrap gap-5'>
                         {dataProducts.map((product: any) => (
                             <ProductCard key={product.id}
-                                title={product.title}
-                                description={product.description}
-                                image={product.image}
-                                versions={product.versions}
+                                product={product}
                             />
                         ))}
                     </div>

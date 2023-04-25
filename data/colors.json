@@ -2,23 +2,28 @@
     "colors": [
         {
             "id": 0,
-            "name": "Noir"
+            "name": "Noir",
+            "hex": "#111113"
         },
         {
             "id": 1,
-            "name": "Blanc"
+            "name": "Blanc",
+            "hex": "#f0f0f2"
         },
         {
             "id": 2,
-            "name": "Gris"
+            "name": "Gris",
+            "hex": "#3e3f44"
         },
         {
             "id": 3,
-            "name": "Blanc chiné"
+            "name": "Blanc chiné",
+            "hex": "#e5e5e5"
         },
         {
             "id": 4,
-            "name": "Rouge"
+            "name": "Rouge",
+            "hex": "#971227"
         }
     ]
 }

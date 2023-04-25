@@ -21,7 +21,7 @@ export default async function handler(req: any, res: any) {
     const collectionsContent = await fs.readFile(jsonDirectory + '/collections.json', 'utf8');
     const collectionsData = JSON.parse(collectionsContent);
 
-    let productData = productsData.products.find((product: { id: any }) => product.id === parseInt(query.id));    
+    let productData = productsData.products.find((product: { id: any }) => product.id === parseInt(query.id));
 
     productData = {
         ...productData,

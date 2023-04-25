@@ -36,10 +36,7 @@ const News: NextPage = () => {
                         {dataProducts.map((product: any) => (
                             product.isNew &&
                             <ProductCard key={product.id}
-                                title={product.title}
-                                description={product.description}
-                                image={product.image}
-                                versions={product.colors}
+                                product={product}
                             />
                         ))}
                     </div>

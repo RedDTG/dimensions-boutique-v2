@@ -78,10 +78,7 @@ export default function Home() {
             {dataProducts.map((product: any) => (
               product.isNew &&
               <ProductCard key={product.id}
-                title={product.title}
-                description={product.description}
-                image={product.image}
-                versions={product.versions}
+                product={product}
               />
             ))}
           </div>
@@ -104,10 +101,7 @@ export default function Home() {
             {dataProducts.map((product: any) => (
               product.isPopular &&
               <ProductCard key={product.id}
-                title={product.title}
-                description={product.description}
-                image={product.image}
-                versions={product.versions}
+                product={product}
               />
             ))}
           </div>

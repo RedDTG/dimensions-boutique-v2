@@ -25,10 +25,7 @@ export const Collection: React.FC<CollectionProps> = (props) => {
             <div className='flex justify-center flex-row flex-wrap gap-5'>
                 {props.products.map((product: any) => (
                     <ProductCard key={product.id}
-                        title={product.title}
-                        description={product.description}
-                        image={product.image}
-                        versions={product.versions}
+                        product={product}
                     />
                 ))}
             </div>

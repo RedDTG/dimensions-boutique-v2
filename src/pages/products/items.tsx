@@ -36,10 +36,7 @@ const Items: NextPage = () => {
                         {dataProducts.map((product: any) => (
                             product.type.id == 2 &&
                             <ProductCard key={product.id}
-                                title={product.title}
-                                description={product.description}
-                                image={product.image}
-                                versions={product.versions}
+                                product={product}
                             />
                         ))}
                     </div>
