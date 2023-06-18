@@ -1,0 +1,197 @@
+{
+    "products": [
+        {
+            "id": 0,
+            "type": 0,
+            "collection": null,
+            "title": "T-shirt Officiel DIMENSIONS",
+            "description": "Le t-shirt officiel de notre serveur ! Tout membre qui se respecte se doit de le posséder !",
+            "image": "officiel_gris.jpg",
+            "versions": [
+                {
+                    "color": 2,
+                    "image": "officiel_gris.jpg",
+                    "price": 15
+                },
+                {
+                    "color": 1,
+                    "image": "officiel_blanc.png",
+                    "price": 10
+                }
+            ],
+            "isNew": true,
+            "isPopular": true
+        },
+        {
+            "id": 1,
+            "type": 0,
+            "collection": null,
+            "title": "T-shirt Logo Poitrine",
+            "description": "Un t-shirt discret avec seulement notre logo. Le design passe partout pour n'importe laquelle de vos journée !",
+            "image": "logo_poitrine_gris.png",
+            "versions": [
+                {
+                    "color": 2,
+                    "image": "logo_poitrine_gris.png",
+                    "price": 15
+                },
+                {
+                    "color": 1,
+                    "image": "logo_poitrine_blanc.png",
+                    "price": 10
+                }
+            ],
+            "isNew": true,
+            "isPopular": true
+        },
+        {
+            "id": 2,
+            "type": 0,
+            "collection": null,
+            "title": "T-Shirt Good, Bad, Ugly",
+            "description": "Tandis que l'un essayait de sauver Discordia, un autre essayait de le faire sombrer pour s'amuser, pendant que le dernier ne voulait que la dystopie. Un climat bien étrange pour un serveur Discord !",
+            "image": "good_bad_ugly_noir.png",
+            "versions": [
+                {
+                    "color": 0,
+                    "image": "good_bad_ugly_noir.png",
+                    "price": 20
+                },
+                {
+                    "color": 1,
+                    "image": "good_bad_ugly_blanc.png",
+                    "price": 15
+                }
+            ],
+            "isNew": true,
+            "isPopular": false
+        },
+        {
+            "id": 3,
+            "type": 0,
+            "collection": 0,
+            "title": "T-shirt Keep Calm And Wait For...",
+            "description": "Ce serveur a vu de nombreux projets voir le jour... ou pas ! Un certain membre collectionne d'ailleurs les projets mis sur le banc de touche. T'inquiètes pas Bartho, ce running gag s'arrêtera un jour... ou pas !",
+            "image": "keep_calm_bartho_noir.png",
+            "versions": [
+                {
+                    "color": 0,
+                    "image": "keep_calm_bartho_noir.png",
+                    "price": 20
+                },
+                {
+                    "color": 1,
+                    "image": "keep_calm_bartho_blanc.jpg",
+                    "price": 15
+                }
+            ],
+            "isNew": true,
+            "isPopular": false
+        },
+        {
+            "id": 4,
+            "type": 0,
+            "collection": 0,
+            "title": "T-Shirt Bidoof Civilisation",
+            "description": "Le grand 10E BIDOOF revient pour instaurer son autorité sur le monde ! Il en profite sortir un tout nouvel album ! Étrange façon de conquérir le monde mais pourquoi pas après tout !",
+            "image": "bidoof_san_noir.png",
+            "versions": [
+                {
+                    "color": 0,
+                    "image": "bidoof_san_noir.png",
+                    "price": 20
+                },
+                {
+                    "color": 1,
+                    "image": "bidoof_san_blanc.png",
+                    "price": 15
+                }
+            ],
+            "isNew": false,
+            "isPopular": false
+        },
+        {
+            "id": 5,
+            "type": 0,
+            "collection": 0,
+            "title": "T-Shirt RED Dead Redemption",
+            "description": "Toujours présent pour vous faire manger les pissenlits par la racine, ce fou du marteau a sorti son six coups, et c'est pas pour faire des crêpes !",
+            "image": "red_dead_rouge.png",
+            "versions": [
+                {
+                    "color": 4,
+                    "image": "red_dead_rouge.png",
+                    "price": 20
+                },
+                {
+                    "color": 1,
+                    "image": "red_dead_blanc.png",
+                    "price": 15
+                }
+            ],
+            "isNew": false,
+            "isPopular": false
+        },
+        {
+            "id": 6,
+            "type": 0,
+            "collection": null,
+            "title": "T-Shirt Spica Gang",
+            "description": "Le Spica Gang n'est pas mort ! Il continue d'exister à travers tout ceux qui y croient encore ! Comment ça c'était pas la même timeline ? Comment ça c'est pas canon ? Rien ne nous empêchera d'espérer !",
+            "image": "spica_gang_chine.png",
+            "versions": [
+                {
+                    "color": 3,
+                    "image": "spica_gang_chine.png",
+                    "price": 20
+                },
+                {
+                    "color": 1,
+                    "image": "spica_gang_blanc.png",
+                    "price": 15
+                }
+            ],
+            "isNew": true,
+            "isPopular": false
+        },
+        {
+            "id": 7,
+            "type": 0,
+            "collection": null,
+            "title": "T-Shirt Vsquad",
+            "description": "Tout le monde sait qu'elle existe mais personne n'ose en parler. Ils se tapissent dans l'ombre, préfèreront regarder un énième CGDCT plutôt que la masterclass de l'année. Oui, ce t-shirt est un indispensable pour chaque membre de la Vsquad !",
+            "image": "vsquad_blanc.jpg",
+            "versions": [
+                {
+                    "color": 1,
+                    "image": "vsquad_blanc.jpg",
+                    "price": 15
+                },
+                {
+                    "color": 3,
+                    "image": "vsquad_chine.jpg",
+                    "price": 20
+                }
+            ],
+            "isNew": true,
+            "isPopular": true
+        },
+        {
+            "id": 8,
+            "type": 2,
+            "collection": null,
+            "title": "10 Stickers brillants Dimensions",
+            "description": "Un lot de 10 stickers flamboyants à coller n'importe où ! Avec leurs fonds gris brillant, ils éblouiront tous ceux qui poseront leur regard sur eux !",
+            "image": "https://zupimages.net/up/22/14/x6uw.jpg",
+            "versions": [
+                {
+                    "color": null,
+                    "image": "https://zupimages.net/up/22/14/x6uw.jpg",
+                    "price": 3
+                }
+            ],
+            "isNew": false,
+            "isPopular": true
+        }
+    ]
+}

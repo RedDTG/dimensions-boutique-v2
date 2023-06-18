@@ -1,0 +1,16 @@
+{
+    "types": [
+        {
+            "id": 0,
+            "name": "T-shirt"
+        },
+        {
+            "id": 1,
+            "name": "Sweat"
+        },
+        {
+            "id": 2,
+            "name": "Accessoire"
+        }
+    ]
+}
