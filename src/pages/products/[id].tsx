@@ -29,6 +29,8 @@ const ProductsIndex: NextPage<ProductsIndexProps> = (props) => {
 
     const [version, setVersion] = useState(props.versions[0]);
 
+    const [taille, setTaille] = useState('Taille');
+
     // console.log(dataProduct.versions.find((version) => version === color)?.image);
 
     const onVersionChange = (e: any) => {
@@ -36,6 +38,25 @@ const ProductsIndex: NextPage<ProductsIndexProps> = (props) => {
 
         if (version) {
             setVersion(version);
+        }
+    }
+
+    const onAddToCart = () => {
+        let cart: Product[] = [];
+
+        if (!localStorage.getItem('cart')) {
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+        else {
+            const cart_product = dataProduct;
+            cart_product.versions.splice(0);
+            cart_product.versions.push(version);
+            cart_product.size = taille;
+
+            cart = JSON.parse(localStorage.getItem('cart') || '{}');
+            cart.push(dataProduct);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            console.log(cart);
         }
     }
 
@@ -95,17 +116,18 @@ const ProductsIndex: NextPage<ProductsIndexProps> = (props) => {
                                 </div>
                             </div>
                             <div className="divider divider-horizontal"></div>
-                            <div className="flex flex-col items-center justify-center flex-1 flex-grow w-full gap-14  max-w-lg">
+                            <div className="flex flex-col items-center justify-center flex-1 flex-grow w-full gap-14 max-w-lg">
                                 <div className="flex flex-col items-center gap-16 w-full">
                                     <div className="flex flex-col items-center gap-5 w-full">
-                                        <div className="divider mx-16">Commander</div>
+                                        {/* <div className="divider mx-16">Commander</div> */}
+                                        <div className="divider mx-16">Prix</div>
                                         <h2 className="font-bold text-3xl">{version.price}€</h2>
                                     </div>
-                                    <div className="flex flex-col gap-16">
-                                        <div className="flex flex-row gap-5 items-center">
+                                    <div className="flex flex-col gap-10 items-center">
+                                        {/* <div className="flex flex-row gap-5 items-center">
                                             <p className="text-center">Couleur : <b>{version.color.name}</b></p>
-                                            <select className="select select-bordered max-w-xs">
-                                                <option disabled selected>Taille</option>
+                                            <select className="select select-bordered max-w-xs" value={taille} onChange={(e) => { setTaille(e.target.value); }}>
+                                                <option disabled>Taille</option>
                                                 <option>XXS</option>
                                                 <option>XS</option>
                                                 <option>S</option>
@@ -117,7 +139,25 @@ const ProductsIndex: NextPage<ProductsIndexProps> = (props) => {
                                                 <option>4XL</option>
                                             </select>
                                         </div>
-                                        <button className="btn btn-primary">Ajouter au panier</button>
+                                        <button className="btn btn-primary w-52" onClick={onAddToCart}>Ajouter au panier</button> */}
+
+                                        <button className="btn btn-primary w-52 flex gap-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 640 850"><path fill="currentColor" d="M232 407q-23 0-40 14t-22 38l-35 208H21q-9 0-15-7t-5-16l52-337L96 36q2-12 11-20t21-8h233q55 0 100 16t70 47q18 21 25 38q9 20 9 43v11q-1 6-1 12t-2 14q-1 4-1 7t-1 6q-20 104-84 154t-176 51h-68zm375-189q21 25 26 60t-3 78q-10 52-32 87t-52 58t-69 31t-83 10h-18q-11 0-19 6t-10 18l-2 8l-22 145l-2 6q-2 11-9 18t-19 7H173l45-283q2-11 14-11h68q128 0 205-61t102-177z" /></svg>
+                                            Commander
+                                        </button>
+
+                                        <div className="flex flex-col gap-2 text-red-500 font-bold text-sm">
+                                            <p>
+                                                Dans votre virement Paypal, merci de préciser:
+                                            </p>
+                                            <ul className="px-5">
+                                                <li>- Votre pseudo Discord</li>
+                                                <li>- Le nom des produits</li>
+                                                <li>- Leurs couleurs</li>
+                                                <li>- Leurs tailles</li>
+                                            </ul>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>

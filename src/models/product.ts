@@ -8,6 +8,7 @@ interface Product {
     versions: Version[];
     isNew: boolean;
     isPopular: boolean;
+    size: string;
 }
 
 interface Version {
