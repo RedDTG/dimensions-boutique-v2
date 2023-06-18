@@ -1,4 +1,5 @@
-import { GetServerSideProps, InferGetServerSidePropsType, NextPage } from "next";
+import { Product } from "@/models/product";
+import { InferGetServerSidePropsType, NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";

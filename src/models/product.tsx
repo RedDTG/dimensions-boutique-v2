@@ -1,4 +1,6 @@
-interface Product {
+import { Color } from "./color";
+
+export interface Product {
     id: number;
     type: number;
     collection: number;
@@ -11,7 +13,7 @@ interface Product {
     size: string;
 }
 
-interface Version {
+export interface Version {
     color: Color;
     image: string;
     price: number;
