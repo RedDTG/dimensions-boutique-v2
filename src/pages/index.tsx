@@ -4,6 +4,7 @@ import useSWR from 'swr';
 
 import { ProductCard } from '@/components/product'
 import Link from 'next/link';
+import { Product } from '@/models/product';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -72,8 +73,7 @@ export default function Home() {
           <div className="divider"><h2 className='text-3xl font-bold w-full text-center'>Nouveautés 2023</h2></div>
 
           <div className='flex justify-center flex-row flex-wrap gap-5'>
-            {dataProducts.map((product: any) => (
-              product.isNew &&
+            {dataProducts.filter((product: Product) => product.isNew).slice(0, 4).map((product: any) => (
               <ProductCard key={product.id}
                 product={product}
               />
@@ -95,8 +95,7 @@ export default function Home() {
           <div className="divider"><h2 className='text-3xl font-bold w-full text-center'>Les Classiques</h2></div>
 
           <div className='flex justify-center flex-row flex-wrap gap-5'>
-            {dataProducts.map((product: any) => (
-              product.isPopular &&
+            {dataProducts.filter((product: Product) => product.isPopular).map((product: any) => (
               <ProductCard key={product.id}
                 product={product}
               />

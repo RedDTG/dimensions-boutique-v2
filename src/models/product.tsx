@@ -2,7 +2,7 @@ import { Color } from "./color";
 
 export interface Product {
     id: number;
-    type: number;
+    type: ProductType;
     collection: number;
     title: string;
     description: string;
@@ -17,4 +17,9 @@ export interface Version {
     color: Color;
     image: string;
     price: number;
+}
+
+export interface ProductType {
+    id: number;
+    name: string;
 }

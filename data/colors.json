@@ -24,6 +24,16 @@
             "id": 4,
             "name": "Rouge",
             "hex": "#971227"
+        },
+        {
+            "id": 5,
+            "name": "Marron",
+            "hex": "#372d24"
+        },
+        {
+            "id": 6,
+            "name": "Gris chiné",
+            "hex": "#a3a3a3"
         }
     ]
 }

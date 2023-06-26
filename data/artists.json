@@ -1,0 +1,64 @@
+{
+   "artists": [
+        {
+            "id": 1,
+            "pseudo": "Red",
+            "description": "Paint.net > Photoshop",
+            "image": "red.png",
+            "website": "https://github.com/RedDTG",
+            "instagram": "",
+            "twitter": "",
+            "youtube": "https://www.youtube.com/channel/UC0uU0FcUVOsQPUwjEiB_uqw",
+            "twitch": "",
+            "facebook": ""
+        },
+        {
+            "id": 2,
+            "pseudo": "Atchimays",
+            "description": "Je tente des trucs sur Photoshop.\nC'est souvent nul.",
+            "image": "atchimays.jpg",
+            "website": "",
+            "instagram": "",
+            "twitter": "",
+            "youtube": "https://www.youtube.com/@Atchimays",
+            "twitch": "",
+            "facebook": ""
+        },
+        {
+            "id": 3,
+            "pseudo": "Alice",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "image": "red.png",
+            "website": "https://test.com",
+            "instagram": "ss",
+            "twitter": "sss",
+            "youtube": "s",
+            "twitch": "d",
+            "facebook": ""
+        },
+        {
+            "id": 4,
+            "pseudo": "Iona",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "image": "red.png",
+            "website": "https://test.com",
+            "instagram": "ss",
+            "twitter": "sss",
+            "youtube": "s",
+            "twitch": "d",
+            "facebook": ""
+        },
+        {
+            "id": 5,
+            "pseudo": "Cecilia",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "image": "red.png",
+            "website": "https://test.com",
+            "instagram": "ss",
+            "twitter": "sss",
+            "youtube": "s",
+            "twitch": "d",
+            "facebook": ""
+        }
+   ] 
+}
