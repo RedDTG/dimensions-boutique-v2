@@ -1,3 +1,4 @@
+import environment from "@/environment";
 import { Product } from "@/models/product";
 import { InferGetServerSidePropsType, NextPage } from "next";
 import Head from "next/head";
@@ -7,7 +8,7 @@ import { useState } from "react";
 export const getServerSideProps = async (context: any) => {
 
     try {
-        const res = await fetch(process.env.BASE_URL + `/api/product/` + context.query.id?.toString())
+        const res = await fetch(environment[process.env.NODE_ENV].apiUrl + `/product/` + context.query.id?.toString())
         const data: Product = await res.json()
 
         if (!data) {
