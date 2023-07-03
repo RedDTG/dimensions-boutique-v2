@@ -5,7 +5,7 @@ export const Footer: React.FC = () => {
         <div className="footer text-base-content p-10">
             <div>
                 <span className="footer-title">Informations</span>
-                <Link href={""} className="link link-hover">Conception</Link>
+                <Link href={"/conception"} className="link link-hover">Conception</Link>
                 <Link href={""} className="link link-hover">Bénéfices</Link>
                 <Link href={""} className="link link-hover">FAQ</Link>
                 {/* <Link href={""} className="link link-hover">Mentions légales</Link> */}
@@ -13,8 +13,8 @@ export const Footer: React.FC = () => {
             <div>
                 <span className="footer-title">Dimensions</span>
                 <Link href={""} className="link link-hover">À propos</Link>
+                <Link href={"/artistes"} className="link link-hover">Artistes</Link>
                 <Link href={""} className="link link-hover">Contact</Link>
-                <Link href={"/artists"} className="link link-hover">Artistes</Link>
             </div>
             <div>
                 <span className="footer-title">Social</span>

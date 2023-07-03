@@ -1,9 +1,9 @@
 {
    "artists": [
         {
-            "id": 1,
+            "id": 0,
             "pseudo": "Red",
-            "description": "Paint.net > Photoshop",
+            "bio": "Paint.net > Photoshop",
             "image": "red.png",
             "website": "https://github.com/RedDTG",
             "instagram": "",
@@ -13,9 +13,9 @@
             "facebook": ""
         },
         {
-            "id": 2,
+            "id": 1,
             "pseudo": "Atchimays",
-            "description": "Je tente des trucs sur Photoshop.\nC'est souvent nul.",
+            "bio": "Je tente des trucs sur Photoshop.\nC'est souvent nul.",
             "image": "atchimays.jpg",
             "website": "",
             "instagram": "",
@@ -25,9 +25,21 @@
             "facebook": ""
         },
         {
-            "id": 3,
+            "id": 2,
             "pseudo": "Alice",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "image": "red.png",
+            "website": "https://test.com",
+            "instagram": "ss",
+            "twitter": "sss",
+            "youtube": "s",
+            "twitch": "d",
+            "facebook": ""
+        },
+        {
+            "id": 3,
+            "pseudo": "Iona",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "image": "red.png",
             "website": "https://test.com",
             "instagram": "ss",
@@ -38,20 +50,8 @@
         },
         {
             "id": 4,
-            "pseudo": "Iona",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            "image": "red.png",
-            "website": "https://test.com",
-            "instagram": "ss",
-            "twitter": "sss",
-            "youtube": "s",
-            "twitch": "d",
-            "facebook": ""
-        },
-        {
-            "id": 5,
             "pseudo": "Cecilia",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "image": "red.png",
             "website": "https://test.com",
             "instagram": "ss",

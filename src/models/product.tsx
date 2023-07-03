@@ -1,3 +1,4 @@
+import { Artist } from "./artist";
 import { Color } from "./color";
 
 export interface Product {
@@ -11,6 +12,7 @@ export interface Product {
     isNew: boolean;
     isPopular: boolean;
     size: string;
+    artist: Artist;
 }
 
 export interface Version {

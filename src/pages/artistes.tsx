@@ -5,6 +5,7 @@ import Image from "next/image";
 
 
 import Link from "next/link";
+import { Artist } from "@/models/artist";
 
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
@@ -37,12 +38,12 @@ const Artists: NextPage = () => {
                 <div className="w-full flex justify-center flex-row gap-16 gap-y-8 pb-32 flex-wrap">
 
                     {
-                        dataArtists.map((artist: any) => (
+                        dataArtists.map((artist: Artist) => (
                             <div key={artist.id} className="card lg:card-side w-1/2 max-w-xl h-1/6 bg-base-100 shadow-xl border-2 border-base-300">
                                 <figure className="h-full"><Image src={"/images/artists/" + artist.image} width={1000} height={1000} alt={artist.image} className='rounded-l-xl w-32 h-32' /></figure>
                                 <div className="card-body p-3 text-center items-center w-1/2">
                                     <h2 className="card-title">{artist.pseudo}</h2>
-                                    <p  className="italic">&quot;{artist.description}&quot;</p>
+                                    <p  className="italic">&quot;{artist.bio}&quot;</p>
                                     <div className="card-actions justify-center flex flex-row gap-4">
                                         { artist.website ? <Link href={artist.website}><Image src={"/images/networks/website.png"} width={25} height={25} alt={"Website"} /></Link> : null }
                                         { artist.instagram ? <Link href={artist.instagram}><Image src={"/images/networks/instagram.webp"} width={25} height={25} alt={"Instagram"} /></Link> : null }

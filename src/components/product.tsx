@@ -15,12 +15,15 @@ export const ProductCard: React.FC<ProductCardProps> = (props) => {
 
                     <h2 className="card-title pb-2">{props.product.title}</h2>
                     <p>{props.product.description}</p>
-                    <div className="card-actions justify-end">
-                        {
-                            props.product.versions?.filter(version => version.color).map((version: { color?: { id: number, name: string } }) => (
-                                <div key={version.color?.id} className="badge badge-outline">{version.color?.name}</div>
-                            ))
-                        }
+                    <div className="card-actions justify-between">
+                        {props.product.artist ? <div className="italic">Par {props.product.artist.pseudo}</div> : null}
+                        <div className="flex gap-2">
+                            {
+                                props.product.versions?.filter(version => version.color).map((version: { color?: { id: number, name: string } }) => (
+                                    <div key={version.color?.id} className="badge badge-outline">{version.color?.name}</div>
+                                ))
+                            }
+                        </div>
                     </div>
                 </div>
             </Link>

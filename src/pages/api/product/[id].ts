@@ -21,6 +21,9 @@ export default async function handler(req: any, res: any) {
     const collectionsContent = await fs.readFile(jsonDirectory + '/collections.json', 'utf8');
     const collectionsData = JSON.parse(collectionsContent);
 
+    const artistsContent = await fs.readFile(jsonDirectory + '/artists.json', 'utf8');
+    const artistsData = JSON.parse(artistsContent);
+
     let productData = productsData.products.find((product: { id: any }) => product.id === parseInt(query.id));
 
     productData = {
@@ -30,7 +33,8 @@ export default async function handler(req: any, res: any) {
             color: colorsData.colors.find((color: { id: any }) => color.id === version.color)
     })),
         type: typesData.types.find((type: { id: any }) => type.id === productData.type),
-        collection: collectionsData.collections.find((collection: { id: any }) => collection.id === productData.collection)
+        collection: collectionsData.collections.find((collection: { id: any }) => collection.id === productData.collection),
+        artist: artistsData.artists.find((artist: { id: any }) => artist.id === productData.artist)
     }
 
     res.status(200).json(productData);

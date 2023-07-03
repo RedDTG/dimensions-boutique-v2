@@ -2,6 +2,7 @@ import { Product } from "@/models/product";
 import { InferGetServerSidePropsType, NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export const getServerSideProps = async (context: any) => {
@@ -76,7 +77,10 @@ const ProductsIndex: NextPage<ProductsIndexProps> = (props) => {
                     <div className="divider divider-horizontal my-24"></div>
                     <div className="flex flex-col items-center flex-1 gap-16">
                         <div className="flex flex-col gap-10 items-center w-full">
-                            <h2 className="font-bold text-4xl">{dataProduct.title}</h2>
+                            <div className="flex flex-col items-center gap-2">
+                                <h2 className="font-bold text-4xl">{dataProduct.title}</h2>
+                                <h4 className=" italic text-xl">par <Link href={"/artistes"} className="link">{dataProduct.artist.pseudo}</Link></h4>
+                            </div>
                             <p className="w-3/4 text-center">{dataProduct.description}</p>
                         </div>
                         <div className="flex flex-row w-full px-20 justify-center gap-16">
@@ -104,7 +108,7 @@ const ProductsIndex: NextPage<ProductsIndexProps> = (props) => {
                                                     {
                                                         dataProduct.versions.map((v, index) => {
                                                             return (
-                                                                <input key={index} type="radio" name="radio-8" className="radio radio-lg checked:border-blue-400 border-2"
+                                                                <input key={index} type="radio" name="radio-8" className="radio radio-lg checked:border-blue-400 border-2" title={v.color.name}
                                                                     id={v.color.id ? v.color.id.toString() : "1"}
                                                                     value={v.color.id}
                                                                     onChange={onVersionChange}
