@@ -1,18 +1,20 @@
+import Link from "next/link"
+
 export const Footer: React.FC = () => {
     return <footer data-theme="dark" className="bg-base-200 footer-center mt-auto">
         <div className="footer text-base-content p-10">
             <div>
                 <span className="footer-title">Informations</span>
-                <a className="link link-hover">Conception</a>
-                <a className="link link-hover">Bénéfices</a>
-                <a className="link link-hover">FAQ</a>
-                <a className="link link-hover">Mentions légales</a>
+                <Link href={"/conception"} className="link link-hover">Conception</Link>
+                <Link href={""} className="link link-hover">Bénéfices</Link>
+                <Link href={""} className="link link-hover">FAQ</Link>
+                {/* <Link href={""} className="link link-hover">Mentions légales</Link> */}
             </div>
             <div>
                 <span className="footer-title">Dimensions</span>
-                <a className="link link-hover">À propos</a>
-                <a className="link link-hover">Contact</a>
-                <a className="link link-hover">Artistes</a>
+                <Link href={""} className="link link-hover">À propos</Link>
+                <Link href={"/artistes"} className="link link-hover">Artistes</Link>
+                <Link href={""} className="link link-hover">Contact</Link>
             </div>
             <div>
                 <span className="footer-title">Social</span>

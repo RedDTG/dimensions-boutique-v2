@@ -3,6 +3,7 @@ import { Product } from "@/models/product";
 import { InferGetServerSidePropsType, NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export const getServerSideProps = async (context: any) => {
@@ -29,11 +30,11 @@ const ProductsIndex: NextPage<ProductsIndexProps> = (props) => {
 
     const dataProduct = props
 
-    const [version, setVersion] = useState(props.versions[0]);
+    const [version, setVersion] = useState(dataProduct.versions[0]);
 
     const [taille, setTaille] = useState('Taille');
 
-    // console.log(dataProduct.versions.find((version) => version === color)?.image);
+    console.log(dataProduct);
 
     const onVersionChange = (e: any) => {
         const version = dataProduct.versions.find((version) => version.color.id === parseInt(e.target.value));
@@ -77,47 +78,54 @@ const ProductsIndex: NextPage<ProductsIndexProps> = (props) => {
                     <div className="divider divider-horizontal my-24"></div>
                     <div className="flex flex-col items-center flex-1 gap-16">
                         <div className="flex flex-col gap-10 items-center w-full">
-                            <h2 className="font-bold text-4xl">{dataProduct.title}</h2>
+                            <div className="flex flex-col items-center gap-2">
+                                <h2 className="font-bold text-4xl">{dataProduct.title}</h2>
+                                <h4 className=" italic text-xl">par <Link href={"/artistes"} className="link">{dataProduct.artist.pseudo}</Link></h4>
+                            </div>
                             <p className="w-3/4 text-center">{dataProduct.description}</p>
                         </div>
                         <div className="flex flex-row w-full px-20 justify-center gap-16">
-                            <div className="flex flex-col gap-14 flex-1 flex-grow max-w-lg">
-                                <div className="flex flex-col items-center">
-                                    <div className="divider mx-16">Tailles</div>
-                                    <div className="flex gap-3 flex-wrap justify-center">
-                                        <kbd className="kbd">XXS</kbd>
-                                        <kbd className="kbd">XS</kbd>
-                                        <kbd className="kbd">S</kbd>
-                                        <kbd className="kbd">M</kbd>
-                                        <kbd className="kbd">L</kbd>
-                                        <kbd className="kbd">XL</kbd>
-                                        <kbd className="kbd">XXL</kbd>
-                                        <kbd className="kbd">3XL</kbd>
-                                        <kbd className="kbd">4XL</kbd>
-                                    </div>
-                                </div>
-                                <div className="flex flex-col items-center">
-                                    <div className="divider mx-16">Couleurs</div>
-                                    <div className="flex gap-3 flex-col justify-center">
-                                        <div className="flex flex-row items-center gap-5">
-                                            {
-                                                dataProduct.versions.map((v, index) => {
-                                                    return (
-                                                        <input key={index} type="radio" name="radio-8" className="radio radio-lg checked:border-blue-400 border-2"
-                                                            id={v.color.id.toString()}
-                                                            value={v.color.id}
-                                                            onChange={onVersionChange}
-                                                            checked={v.color.id === version.color.id}
-                                                            style={{ backgroundColor: v.color.hex }}
-                                                        />
-                                                    )
-                                                })
-                                            }
+                            {dataProduct.type.id != 2 ?
+                                <>
+                                    <div className="flex flex-col gap-14 flex-1 flex-grow max-w-lg">
+                                        <div className="flex flex-col items-center">
+                                            <div className="divider mx-16">Tailles</div>
+                                            <div className="flex gap-3 flex-wrap justify-center">
+                                                <kbd className="kbd">XXS</kbd>
+                                                <kbd className="kbd">XS</kbd>
+                                                <kbd className="kbd">S</kbd>
+                                                <kbd className="kbd">M</kbd>
+                                                <kbd className="kbd">L</kbd>
+                                                <kbd className="kbd">XL</kbd>
+                                                <kbd className="kbd">XXL</kbd>
+                                                <kbd className="kbd">3XL</kbd>
+                                                <kbd className="kbd">4XL</kbd>
+                                            </div>
+                                        </div>
+                                        <div className="flex flex-col items-center">
+                                            <div className="divider mx-16">Couleurs</div>
+                                            <div className="flex gap-3 flex-col justify-center">
+                                                <div className="flex flex-row items-center gap-5">
+                                                    {
+                                                        dataProduct.versions.map((v, index) => {
+                                                            return (
+                                                                <input key={index} type="radio" name="radio-8" className="radio radio-lg checked:border-blue-400 border-2" title={v.color.name}
+                                                                    id={v.color.id ? v.color.id.toString() : "1"}
+                                                                    value={v.color.id}
+                                                                    onChange={onVersionChange}
+                                                                    checked={v.color.id === version.color.id}
+                                                                    style={{ backgroundColor: v.color.hex }}
+                                                                />
+                                                            )
+                                                        })
+                                                    }
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="divider divider-horizontal"></div>
+                                    <div className="divider divider-horizontal"></div>
+                                </> : null
+                            }
                             <div className="flex flex-col items-center justify-center flex-1 flex-grow w-full gap-14 max-w-lg">
                                 <div className="flex flex-col items-center gap-16 w-full">
                                     <div className="flex flex-col items-center gap-5 w-full">
