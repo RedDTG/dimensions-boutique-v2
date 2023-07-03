@@ -8,5 +8,6 @@ export interface Artist {
     twitter: string;
     youtube: string;
     twitch: string;
-    facebook: string;
+    discord: string;
+    artstation: string;
 }
