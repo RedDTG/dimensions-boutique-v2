@@ -50,7 +50,8 @@ const Artists: NextPage = () => {
                                         { artist.twitter ? <Link href={artist.twitter}><Image src={"/images/networks/twitter.webp"} width={25} height={25} alt={"Twitter"} /></Link> : null }
                                         { artist.youtube ? <Link href={artist.youtube}><Image src={"/images/networks/youtube.png"} width={25} height={25} alt={"Youtube"} /></Link> : null }
                                         { artist.twitch ? <Link href={artist.twitch}><Image src={"/images/networks/twitch.png"} width={25} height={25} alt={"Twitch"} /></Link> : null }
-                                        { artist.facebook ? <Link href={artist.facebook}><Image src={"/images/networks/facebook.webp"} width={25} height={25} alt={"Facebook"} /></Link> : null }
+                                        { artist.discord ? <Link href={artist.discord}><Image src={"/images/networks/discord.png"} width={25} height={25} alt={"Discord"} /></Link> : null }
+                                        { artist.artstation ? <Link href={artist.artstation}><Image src={"/images/networks/artstation.png"} width={25} height={25} alt={"Artstation"} /></Link> : null }
                                     </div>
                                 </div>
                             </div>
