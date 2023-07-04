@@ -7,7 +7,7 @@ export default function Document() {
   return (
     <Html lang="fr" data-theme="light">
       <Head>
-        <meta name="robots" content="noindex, noarchive, nosnippet" />
+        <meta name="robots" content="none" />
       </Head>
       <ImageModal />
       <body className='flex flex-col min-h-screen h-auto'>
