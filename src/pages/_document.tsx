@@ -6,7 +6,9 @@ import { ImageModal } from '@/components/imageModal'
 export default function Document() {
   return (
     <Html lang="fr" data-theme="light">
-      <Head />
+      <Head>
+        <meta name="robots" content="noindex, noarchive, nosnippet" />
+      </Head>
       <ImageModal />
       <body className='flex flex-col min-h-screen h-auto'>
         <Header />
