@@ -45,13 +45,13 @@ const Artists: NextPage = () => {
                                     <h2 className="card-title">{artist.pseudo}</h2>
                                     <p  className="italic">&quot;{artist.bio}&quot;</p>
                                     <div className="card-actions justify-center flex flex-row gap-4">
-                                        { artist.website ? <Link href={artist.website}><Image src={"/images/networks/website.png"} width={25} height={25} alt={"Website"} /></Link> : null }
-                                        { artist.instagram ? <Link href={artist.instagram}><Image src={"/images/networks/instagram.webp"} width={25} height={25} alt={"Instagram"} /></Link> : null }
-                                        { artist.twitter ? <Link href={artist.twitter}><Image src={"/images/networks/twitter.webp"} width={25} height={25} alt={"Twitter"} /></Link> : null }
-                                        { artist.youtube ? <Link href={artist.youtube}><Image src={"/images/networks/youtube.png"} width={25} height={25} alt={"Youtube"} /></Link> : null }
-                                        { artist.twitch ? <Link href={artist.twitch}><Image src={"/images/networks/twitch.png"} width={25} height={25} alt={"Twitch"} /></Link> : null }
-                                        { artist.discord ? <Link href={artist.discord}><Image src={"/images/networks/discord.png"} width={25} height={25} alt={"Discord"} /></Link> : null }
-                                        { artist.artstation ? <Link href={artist.artstation}><Image src={"/images/networks/artstation.png"} width={25} height={25} alt={"Artstation"} /></Link> : null }
+                                        { artist.website ? <Link passHref href={artist.website}><Image src={"/images/networks/website.png"} width={25} height={25} alt={"Website"} /></Link> : null }
+                                        { artist.instagram ? <Link passHref href={artist.instagram}><Image src={"/images/networks/instagram.webp"} width={25} height={25} alt={"Instagram"} /></Link> : null }
+                                        { artist.twitter ? <Link passHref href={artist.twitter}><Image src={"/images/networks/twitter.webp"} width={25} height={25} alt={"Twitter"} /></Link> : null }
+                                        { artist.youtube ? <Link passHref href={artist.youtube}><Image src={"/images/networks/youtube.png"} width={25} height={25} alt={"Youtube"} /></Link> : null }
+                                        { artist.twitch ? <Link passHref href={artist.twitch}><Image src={"/images/networks/twitch.png"} width={25} height={25} alt={"Twitch"} /></Link> : null }
+                                        { artist.discord ? <Link passHref href={artist.discord}><Image src={"/images/networks/discord.png"} width={25} height={25} alt={"Discord"} /></Link> : null }
+                                        { artist.artstation ? <Link passHref href={artist.artstation}><Image src={"/images/networks/artstation.png"} width={25} height={25} alt={"Artstation"} /></Link> : null }
                                     </div>
                                 </div>
                             </div>
