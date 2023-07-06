@@ -253,18 +253,18 @@
             "collection": 0,
             "title": "T-Shirt Attack on Titan x Dimensions",
             "description": "Protégez la paix de Discordia aux côtés de Mikasa et du bataillon dimensionnel !",
-            "image": "",
+            "image": "mikasa_blanc.jpg",
             "artist": 3,
             "versions": [
                 {
-                    "color": 2,
-                    "image": "",
-                    "price": 20
+                    "color": 1,
+                    "image": "mikasa_blanc.jpg",
+                    "price": 15
                 },
                 {
-                    "color": 1,
-                    "image": "",
-                    "price": 15
+                    "color": 6,
+                    "image": "mikasa_gris_chine.jpg",
+                    "price": 20
                 }
             ],
             "isNew": true,
