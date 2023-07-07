@@ -72,7 +72,7 @@ const ProductsIndex: NextPage<ProductsIndexProps> = (props) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className='mt-20'>
-                <div className="flex flex-row py-20">
+                <div className="flex flex-row py-20 mx-16">
                     <figure className="max-w-xl"><Image src={"/images/products/" + version.image} width={1000} height={1000} alt={dataProduct.title} unoptimized={true} className='w-full rounded-xl' /></figure>
 
                     <div className="divider divider-horizontal my-24"></div>
