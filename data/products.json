@@ -190,11 +190,11 @@
             "collection": null,
             "title": "10 Stickers brillants Dimensions",
             "description": "Un lot de 10 stickers flamboyants à coller n'importe où ! Avec leurs fonds gris brillant, ils éblouiront tous ceux qui poseront leur regard sur eux !",
-            "image": "soontm.png",
+            "image": "sticker.png",
             "versions": [
                 {
                     "color": null,
-                    "image": "soontm.png",
+                    "image": "sticker.png",
                     "price": 3
                 }
             ],
@@ -276,18 +276,13 @@
             "collection": 0,
             "title": "T-Shirt Outer Wilds x Dimensions",
             "description": "Quelle dimension allez vous explorer aujourd'hui ? A quoi bon se presser quand on a l'éternité devant soi ?",
-            "image": "soontm.png",
+            "image": "outer_wilds.jpg",
             "artist": 3,
             "versions": [
                 {
                     "color": 0,
-                    "image": "soontm.png",
+                    "image": "outer_wilds.jpg",
                     "price": 20
-                },
-                {
-                    "color": 1,
-                    "image": "soontm.png",
-                    "price": 15
                 }
             ],
             "isNew": true,
