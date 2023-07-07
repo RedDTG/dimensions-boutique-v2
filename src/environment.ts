@@ -1,6 +1,6 @@
 const environment = {
     production: {
-        apiUrl: 'https://mayushii.fr/api'
+        apiUrl: 'https://discord-dimensions.com/api'
     },
     development: {
         apiUrl: 'http://localhost:3000/api'
