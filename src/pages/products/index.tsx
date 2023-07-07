@@ -25,7 +25,7 @@ const ProductsIndex: NextPage = () => {
                     <h1 className='text-5xl font-bold text-center pb-20'>Tous les produits</h1>
 
                     <p className='mx-56 text-center'>
-                        Bienvenue dans la section où vous trouverez notre sélection complète de produits dérivés de Dimensions. Nous avons tout ce dont vous avez besoin pour afficher fièrement votre amour pour notre communauté de gaming, de t-shirts en passant par les accessoires. Parcourez notre collection complète et trouvez les articles qui correspondent le mieux à votre style et à votre personnalité.
+                        Bienvenue dans la section où vous trouverez notre sélection complète de produits dérivés de Dimensions. Nous avons tout ce dont vous avez besoin pour afficher fièrement votre amour pour notre communauté, de t-shirts en passant par les accessoires. Parcourez notre collection complète et trouvez les articles qui correspondent le mieux à votre style et à votre personnalité.
                     </p>
                 </div>
                 <div className="w-full flex justify-center flex-col pb-36 gap-10">

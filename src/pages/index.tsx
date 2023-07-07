@@ -52,11 +52,11 @@ export default function Home() {
           <h1 className='text-5xl font-bold text-center pb-24'>Dimensions - Boutique officielle</h1>
 
           <p className='mx-56 text-center'>
-            Bienvenue dans la boutique en ligne Dimensions, où nous avons rassemblé pour vous les meilleurs produits dérivés de votre serveur Discord préféré !
-            Si vous êtes un(e) passionné(e) de Dimensions, vous allez adorer notre sélection de vêtements, d&apos;accessoires, de mugs, de pins et de stickers, conçus pour satisfaire les plus exigeants d&apos;entre vous.
+            Bienvenue sur la boutique en ligne Dimensions, où nous avons rassemblé pour vous les meilleurs produits dérivés de votre serveur Discord préféré !
+            Si vous êtes un(e) passionné(e) de Dimensions, vous allez adorer notre sélection de vêtements, d&apos;accessoires, de mugs et de stickers, conçus pour satisfaire les plus exigeants d&apos;entre vous.
             <br />
             <br />
-            Notre gamme de produits est conçue pour tous les styles et toutes les occasions, que vous cherchiez un sweat à capuche pour rester au chaud lors des soirées de gaming, un t-shirt pour afficher fièrement votre appartenance à Dimensions, ou encore un mug pour prendre votre café ou thé avec style.
+            Notre gamme de produits est conçue pour tous les styles et toutes les occasions, que vous cherchiez un sweat à capuche pour rester au chaud lors des soirées gaming, un t-shirt pour afficher fièrement votre appartenance à Dimensions, ou encore un mug pour prendre votre café ou thé avec style.
             Nous avons également une sélection d&apos;accessoires pour les fans les plus dévoués, tels que des pins et des stickers pour personnaliser votre ordinateur portable, votre sac à dos ou même votre vélo.
             <br />
             <br />
