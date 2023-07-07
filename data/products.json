@@ -355,6 +355,23 @@
             ],
             "isNew": true,
             "isPopular": false
+        },
+        {
+            "id": 16,
+            "type": 1,
+            "collection": null,
+            "title": "Sweat Logo Poitrine",
+            "description": "Profitez du confort de ce sweat en soirée tout en supportant le serveur !",
+            "image": "sweat_logo_poitrine_noir.jpg",
+            "versions": [
+                {
+                    "color": 0,
+                    "image": "sweat_logo_poitrine_noir.jpg",
+                    "price": 40
+                }
+            ],
+            "isNew": true,
+            "isPopular": false
         }
 
     ]
