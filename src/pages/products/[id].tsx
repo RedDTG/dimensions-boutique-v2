@@ -80,7 +80,7 @@ const ProductsIndex: NextPage<ProductsIndexProps> = (props) => {
                         <div className="flex flex-col gap-10 items-center w-full">
                             <div className="flex flex-col items-center gap-2">
                                 <h2 className="font-bold text-4xl">{dataProduct.title}</h2>
-                                <h4 className=" italic text-xl">par <Link href={"/artistes"} className="link">{dataProduct.artist.pseudo}</Link></h4>
+                                {dataProduct.artist ? <h4 className=" italic text-xl">par <Link href={"/artistes"} className="link">{dataProduct.artist.pseudo}</Link></h4> : null }
                             </div>
                             <p className="w-3/4 text-center">{dataProduct.description}</p>
                         </div>

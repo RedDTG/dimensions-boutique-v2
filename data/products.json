@@ -348,7 +348,7 @@
             "image": "soontm.png",
             "versions": [
                 {
-                    "color": 1,
+                    "color": null,
                     "image": "soontm.png",
                     "price": 15
                 }
