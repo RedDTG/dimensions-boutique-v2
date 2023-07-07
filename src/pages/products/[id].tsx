@@ -80,7 +80,7 @@ const ProductsIndex: NextPage<ProductsIndexProps> = (props) => {
                         <div className="flex flex-col gap-10 items-center w-full">
                             <div className="flex flex-col items-center gap-2">
                                 <h2 className="font-bold text-4xl">{dataProduct.title}</h2>
-                                {dataProduct.artist ? <h4 className=" italic text-xl">par <Link href={"/artistes"} className="link">{dataProduct.artist.pseudo}</Link></h4> : null }
+                                {dataProduct.artist ? <h4 className=" italic text-xl">par <Link href={"/artistes"} className="link">{dataProduct.artist.pseudo}</Link></h4> : null}
                             </div>
                             <p className="w-3/4 text-center">{dataProduct.description}</p>
                         </div>
@@ -151,10 +151,12 @@ const ProductsIndex: NextPage<ProductsIndexProps> = (props) => {
                                         </div>
                                         <button className="btn btn-primary w-52" onClick={onAddToCart}>Ajouter au panier</button> */}
 
-                                        <button className="btn btn-primary w-52 flex gap-4">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 640 850"><path fill="currentColor" d="M232 407q-23 0-40 14t-22 38l-35 208H21q-9 0-15-7t-5-16l52-337L96 36q2-12 11-20t21-8h233q55 0 100 16t70 47q18 21 25 38q9 20 9 43v11q-1 6-1 12t-2 14q-1 4-1 7t-1 6q-20 104-84 154t-176 51h-68zm375-189q21 25 26 60t-3 78q-10 52-32 87t-52 58t-69 31t-83 10h-18q-11 0-19 6t-10 18l-2 8l-22 145l-2 6q-2 11-9 18t-19 7H173l45-283q2-11 14-11h68q128 0 205-61t102-177z" /></svg>
-                                            Commander
-                                        </button>
+                                        <Link passHref href={"https://paypal.me/discorddimensions"}>
+                                            <button className="btn btn-primary w-52 flex gap-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 640 850"><path fill="currentColor" d="M232 407q-23 0-40 14t-22 38l-35 208H21q-9 0-15-7t-5-16l52-337L96 36q2-12 11-20t21-8h233q55 0 100 16t70 47q18 21 25 38q9 20 9 43v11q-1 6-1 12t-2 14q-1 4-1 7t-1 6q-20 104-84 154t-176 51h-68zm375-189q21 25 26 60t-3 78q-10 52-32 87t-52 58t-69 31t-83 10h-18q-11 0-19 6t-10 18l-2 8l-22 145l-2 6q-2 11-9 18t-19 7H173l45-283q2-11 14-11h68q128 0 205-61t102-177z" /></svg>
+                                                Commander
+                                            </button>
+                                        </Link>
 
                                         <div className="flex flex-col gap-2 text-red-500 font-bold text-sm">
                                             <p>
