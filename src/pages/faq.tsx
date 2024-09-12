@@ -11,12 +11,11 @@ export default function Faq() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className='mt-20'>
-
+            <main>
                 <div className='w-full py-28'>
                     <h1 className='text-5xl font-bold text-center pb-24'>Foire aux questions</h1>
 
-                    <div className='mx-72 text-center'>
+                    <div className='mx-10 md:mx-40 lg:mx-72 text-center'>
                         <div className='font-bold text-lg'>Qu&apos;est-ce que c&apos;est ?</div>
                         Sur ce site, vous trouverez des goodies en lien avec notre serveur Discord, ainsi que des moyens pour les acheter. Tous les designs ont été créés par des membres de ce serveur, et la confection des produits est réalisée par des fabricants tiers proposant des options de personnalisation. Nous ne fabriquons pas nous-mêmes les produits. Plus d&apos;informations sur la page <Link href={'/conception'} className='link'>Conception</Link>.
                         <br />
@@ -57,7 +56,6 @@ export default function Faq() {
                         <div className='text-xl font-bold'>Pour toute autre question, n&apos;hesitez pas à contacter un administrateur du serveur Dimensions via le serveur Discord !</div>
                     </div>
                 </div>
-
             </main>
         </>
     )

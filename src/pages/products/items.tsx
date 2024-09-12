@@ -22,11 +22,11 @@ const Items: NextPage = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className='mt-20'>
+            <main>
                 <div className='w-full py-28'>
                     <h1 className='text-5xl font-bold text-center pb-20'>Les accessoires</h1>
 
-                    <p className='mx-56 text-center'>
+                    <p className='mx-10 md:mx-32 lg:mx-56 text-center'>
                         Ajoutez une touche de style à votre look avec notre sélection d&apos;accessoires Dimensions. De notre gamme de pins et de stickers aux mugs élégants et pratiques, nos accessoires sont conçus pour les fans les plus dévoués. Parcourez notre sélection d&apos;accessoires et trouvez les articles qui correspondent le mieux à votre style et à votre personnalité.
                     </p>
                 </div>

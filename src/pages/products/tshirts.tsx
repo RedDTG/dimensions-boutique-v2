@@ -22,11 +22,11 @@ const Tshirts: NextPage = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className='mt-20'>
+            <main>
                 <div className='w-full py-28'>
                     <h1 className='text-5xl font-bold text-center pb-20'>Les t-shirts</h1>
 
-                    <p className='mx-56 text-center'>
+                    <p className='mx-10 md:mx-32 lg:mx-56 text-center'>
                         Affichez votre appartenance à la communauté Dimensions avec notre sélection de t-shirts de qualité supérieure. Disponibles en différentes tailles et designs, nos t-shirts sont confortables, durables et parfaits pour toutes les personnes qui veulent être à l&apos;aise tout en restant élégants.
                     </p>
                 </div>

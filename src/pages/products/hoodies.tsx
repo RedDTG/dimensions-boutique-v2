@@ -22,11 +22,11 @@ const Items: NextPage = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className='mt-20'>
+            <main>
                 <div className='w-full py-28'>
                     <h1 className='text-5xl font-bold text-center pb-20'>Les sweats à capuche</h1>
 
-                    <p className='mx-56 text-center'>
+                    <p className='mmx-10 md:mx-32 lg:mx-56 text-center'>
                         Restez au chaud lors des longues soirées de gaming avec nos sweats à capuche Dimensions. Designés avec amour, nos sweats à capuche sont confortables et durables, parfaits pour tous les fans qui veulent rester à l&apos;aise tout en représentant leur serveur Discord préféré.
                     </p>
                 </div>

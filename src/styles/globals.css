@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 div#__next {
-    @apply my-auto;
-  }
+  @apply my-auto;
+}

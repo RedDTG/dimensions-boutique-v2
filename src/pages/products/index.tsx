@@ -20,11 +20,11 @@ const ProductsIndex: NextPage = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className='mt-20'>
+            <main>
                 <div className='w-full py-28'>
                     <h1 className='text-5xl font-bold text-center pb-20'>Tous les produits</h1>
 
-                    <p className='mx-56 text-center'>
+                    <p className='mx-10 md:mx-32 lg:mx-56 text-center'>
                         Bienvenue dans la section où vous trouverez notre sélection complète de produits dérivés de Dimensions. Nous avons tout ce dont vous avez besoin pour afficher fièrement votre amour pour notre communauté, de t-shirts en passant par les accessoires. Parcourez notre collection complète et trouvez les articles qui correspondent le mieux à votre style et à votre personnalité.
                     </p>
                 </div>

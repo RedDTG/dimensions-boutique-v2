@@ -7,7 +7,6 @@ import Link from "next/link";
 import { useState } from "react";
 
 export const getServerSideProps = async (context: any) => {
-
     try {
         const res = await fetch(environment[process.env.NODE_ENV].apiUrl + `/product/` + context.query.id?.toString())
         const data: Product = await res.json()
@@ -21,7 +20,6 @@ export const getServerSideProps = async (context: any) => {
     } catch (error) {
         return { redirect: { permanent: false, destination: "/" } }
     }
-
 }
 
 type ProductsIndexProps = InferGetServerSidePropsType<typeof getServerSideProps>
@@ -71,25 +69,27 @@ const ProductsIndex: NextPage<ProductsIndexProps> = (props) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className='mt-20'>
-                <div className="flex flex-row py-20 mx-16">
-                    <figure className="max-w-xl"><Image src={"/images/products/" + version.image} width={1000} height={1000} alt={dataProduct.title} unoptimized={true} className='w-full rounded-xl' /></figure>
+            <main >
+                <div className="flex flex-col lg:flex-row items-center py-20 mx-10 lg:mx-16">
+                    <figure className="max-w-xl lg:max-w-md xl:max-w-xl"><Image src={"/images/products/" + version.image} width={1000} height={1000} alt={dataProduct.title} unoptimized={true} className='w-full rounded-xl' /></figure>
 
-                    <div className="divider divider-horizontal my-24"></div>
-                    <div className="flex flex-col items-center flex-1 gap-16">
+                    <div className="divider divider-vertical lg:divider-horizontal lg:my-24"></div>
+
+                    <div className="flex flex-col items-center flex-1 gap-8 lg:gap-16">
                         <div className="flex flex-col gap-10 items-center w-full">
                             <div className="flex flex-col items-center gap-2">
-                                <h2 className="font-bold text-4xl">{dataProduct.title}</h2>
+                                <h2 className="font-bold text-4xl text-center">{dataProduct.title}</h2>
                                 {dataProduct.artist ? <h4 className=" italic text-xl">par <Link href={"/artistes"} className="link">{dataProduct.artist.pseudo}</Link></h4> : null}
                             </div>
                             <p className="w-3/4 text-center">{dataProduct.description}</p>
                         </div>
-                        <div className="flex flex-row w-full px-20 justify-center gap-16">
+
+                        <div className="flex flex-col 2xl:flex-row flex-wrap justify-center items-center gap-8 lg:gap-16 w-full lg:px-20">
                             {dataProduct.type.id != 2 ?
                                 <>
-                                    <div className="flex flex-col gap-14 flex-1 flex-grow max-w-lg">
+                                    <div className="flex flex-col gap-7 lg:gap-14 flex-initial lg:flex-1 flex-grow max-w-lg">
                                         <div className="flex flex-col items-center">
-                                            <div className="divider mx-16">Tailles</div>
+                                            <div className="divider mx-8 lg:mx-16">Tailles</div>
                                             <div className="flex gap-3 flex-wrap justify-center">
                                                 <kbd className="kbd">XXS</kbd>
                                                 <kbd className="kbd">XS</kbd>
@@ -103,7 +103,7 @@ const ProductsIndex: NextPage<ProductsIndexProps> = (props) => {
                                             </div>
                                         </div>
                                         <div className="flex flex-col items-center">
-                                            <div className="divider mx-16">Couleurs</div>
+                                            <div className="divider mx-8 lg:mx-16">Couleurs</div>
                                             <div className="flex gap-3 flex-col justify-center">
                                                 <div className="flex flex-row items-center gap-5">
                                                     {
@@ -123,17 +123,19 @@ const ProductsIndex: NextPage<ProductsIndexProps> = (props) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="divider divider-horizontal"></div>
+
+                                    <div className="hidden 2xl:block divider divider-vertical lg:divider-horizontal"></div>
                                 </> : null
                             }
-                            <div className="flex flex-col items-center justify-center flex-1 flex-grow w-full gap-14 max-w-lg">
-                                <div className="flex flex-col items-center gap-16 w-full">
+
+                            <div className="flex flex-col items-center justify-center flex-initial lg:flex-1 flex-grow w-full gap-14 max-w-lg">
+                                <div className="flex flex-col items-center gap-8 lg:gap-16 w-full">
                                     <div className="flex flex-col items-center gap-5 w-full">
                                         {/* <div className="divider mx-16">Commander</div> */}
-                                        <div className="divider mx-16">Prix</div>
+                                        <div className="divider mx-8 lg:mx-16">Prix</div>
                                         <h2 className="font-bold text-3xl">{version.price}€</h2>
                                     </div>
-                                    <div className="flex flex-col gap-10 items-center">
+                                    <div className="flex flex-col gap-5 lg:gap-10 items-center">
                                         {/* <div className="flex flex-row gap-5 items-center">
                                             <p className="text-center">Couleur : <b>{version.color.name}</b></p>
                                             <select className="select select-bordered max-w-xs" value={taille} onChange={(e) => { setTaille(e.target.value); }}>
@@ -169,13 +171,11 @@ const ProductsIndex: NextPage<ProductsIndexProps> = (props) => {
                                                 <li>- Leurs tailles</li>
                                             </ul>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </main>
         </>

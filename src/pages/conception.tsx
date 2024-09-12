@@ -11,12 +11,11 @@ export default function Conception() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className='mt-20'>
-
+            <main>
                 <div className='w-full py-28'>
                     <h1 className='text-5xl font-bold text-center pb-24'>Conception de nos T-shirts</h1>
 
-                    <div className='mx-56 text-center'>
+                    <div className='mx-10 md:mx-32 lg:mx-56 text-center'>
                         Nous sommes fiers de proposer des designs uniques et authentiques créés par des artistes talentueux de notre communauté. Nous croyons en l&apos;importance de soutenir les artistes locaux et de mettre en valeur leur travail exceptionnel. C&apos;est pourquoi nous collaborons avec des créateurs passionnés qui partagent notre vision artistique. Vous pouvez retrouver la liste des artistes avec lesquels nous travaillons sur <Link href={'/artistes'} className='link'>notre page dédiée</Link>.
                         <br />
                         <br />
@@ -48,7 +47,6 @@ export default function Conception() {
                         Nous nous engageons à vous offrir des produits de qualité, tout en tenant compte de l&apos;impact environnemental et des conditions de travail éthiques. C&apos;est pourquoi nous sommes fiers de proposer une marque comme Sol’s, une marque française qui se démarque par ses produits basiques et incontournables à prix raisonnables. Sol’s possède également la certification Oeko-Tex pour la totalité de ses produits, garantissant ainsi leur innocuité pour la santé et l&apos;environnement. De plus, en tant que membre de la Fair Wear Foundation depuis 2014, Sol’s s&apos;engage à faire respecter un code de conditions de travail éthiques à tous ses partenaires de production et de logistique.
                     </div>
                 </div>
-
             </main>
         </>
     )

@@ -10,7 +10,5 @@ export const ImageModal: React.FC = () => {
                 <Image src={"/images/products/logo_poitrine_gris.jpg"} alt={""} width={1000} height={1000} unoptimized></Image>
             </label>
         </label>
-
     </>
-
 }

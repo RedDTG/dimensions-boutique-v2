@@ -22,16 +22,15 @@ const News: NextPage = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className='mt-20'>
+            <main>
                 <div className='w-full py-28'>
                     <h1 className='text-5xl font-bold text-center pb-20'>Les nouveautés de 2023</h1>
 
-                    <p className='mx-56 text-center'>
+                    <p className='mx-10 md:mx-32 lg:mx-56 text-center'>
                         Bienvenue dans notre section Nouveautés ! Découvrez les derniers produits ajoutés à notre boutique en ligne Dimensions. Nous sommes constamment à la recherche de nouvelles idées pour vous offrir les meilleurs produits dérivés de votre serveur Discord préféré. Ne manquez pas nos dernières créations et soyez parmi les premiers à les afficher fièrement !
                     </p>
                 </div>
                 <div className="w-full flex justify-center flex-col pb-36 gap-10">
-
                     <div className='flex justify-center flex-row flex-wrap gap-5'>
                         {dataProducts.map((product: any) => (
                             product.isNew &&
@@ -52,7 +51,6 @@ const News: NextPage = () => {
                 </div>
             </main>
         </>
-
     );
 }
 

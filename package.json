@@ -15,6 +15,7 @@
     "@vercel/analytics": "^1.0.1",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
+    "lodash.debounce": "^4.0.8",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
+    "@types/lodash.debounce": "^4.0.9",
     "autoprefixer": "^10.4.14",
     "daisyui": "^2.51.4",
     "postcss": "^8.4.21",
