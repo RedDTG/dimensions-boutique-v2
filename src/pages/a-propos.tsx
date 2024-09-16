@@ -11,12 +11,11 @@ export default function Apropos() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className='mt-20'>
-
+            <main>
                 <div className='w-full py-28'>
                     <h1 className='text-5xl font-bold text-center pb-24'>A propos de nous</h1>
 
-                    <div className='mx-56 text-center'>
+                    <div className='mx-10 md:mx-32 lg:mx-56 text-center'>
                         Bienvenue sur la boutique de Dimensions, une communauté dynamique et passionnée qui s&apos;est rencontrée sur un serveur Discord éponyme en 2018. Depuis lors, notre communauté n&apos;a cessé de grandir pour rassembler plus de 200 membres, dont une cinquantaine de personnes investies.
                         <br />
                         <br />
@@ -40,7 +39,6 @@ export default function Apropos() {
                         <Link className='link text-lg' href={'https://discord.com/invite/tbT7q2U'}>Venez vous aussi écrire votre histoire, partager vos idées et forger des amitiés durables.</Link>
                     </div>
                 </div>
-
             </main>
         </>
     )

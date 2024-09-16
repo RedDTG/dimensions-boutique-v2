@@ -24,7 +24,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='mt-20'>
+      <main>
         {/* <div className="carousel w-full">
           <div id="item1" className="carousel-item w-full">
             <Image src={Img1} alt="logo" placeholder='blur' className='w-full'/>
@@ -51,7 +51,7 @@ export default function Home() {
         <div className='w-full py-28'>
           <h1 className='text-5xl font-bold text-center pb-24'>Dimensions - Boutique officielle</h1>
 
-          <p className='mx-56 text-center'>
+          <p className='mx-10 md:mx-32 lg:mx-56 text-center'>
             Bienvenue sur la boutique en ligne Dimensions, où nous avons rassemblé pour vous les meilleurs produits dérivés de votre serveur Discord préféré !
             Si vous êtes un(e) passionné(e) de Dimensions, vous allez adorer notre sélection de vêtements, d&apos;accessoires, de mugs et de stickers, conçus pour satisfaire les plus exigeants d&apos;entre vous.
             <br />

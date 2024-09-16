@@ -11,12 +11,11 @@ export default function Benefices() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className='mt-20'>
-
+            <main>
                 <div className='w-full py-28'>
                     <h1 className='text-5xl font-bold text-center pb-24'>Où vont les bénéfices des ventes ?</h1>
 
-                    <div className='mx-56 text-center'>
+                    <div className='mx-10 md:mx-32 lg:mx-56 text-center'>
                         Sur Dimensions, nous croyons en la force de la communauté et en l&apos;importance de se rassembler et c&apos;est pour cette raison que nous avons créé notre événement annuel : le &ldquo;Meet-Up&ldquo;. Le Meet-Up est une rencontre qui a lieu une fois par an, durant la période estivale, et qui accueille tous les membres de notre serveur, qu&apos;ils soient actifs ou non. Pendant une semaine, nous avons l&apos;occasion de nous retrouver dans un lieu défini pour partager des moments inoubliables ensemble.
                         <br />
                         <br />
@@ -48,7 +47,6 @@ export default function Benefices() {
                         <div className='font-bold text-xl'>L&apos;équipe de Dimensions</div>
                     </div>
                 </div>
-
             </main>
         </>
     )

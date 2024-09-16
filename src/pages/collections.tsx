@@ -22,22 +22,20 @@ const Collections: NextPage = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className='mt-20'>
+            <main>
                 <div className='w-full py-28'>
                     <h1 className='text-5xl font-bold text-center pb-20'>Nos collections</h1>
 
-                    <p className='mx-56 text-center'>
+                    <p className='mx-10 md:mx-32 lg:mx-56 text-center'>
                         Découvrez nos collections Dimensions ! Chacune est unique en son genre et inspirée des thèmes les plus populaires de notre serveur Discord. Choisissez votre collection préférée et assortissez vos produits avec vos amis pour montrer votre appartenance ensemble. Rejoignez la communauté Dimensions et affichez votre passion avec élégance.
                     </p>
                 </div>
                 <div className="w-full flex justify-center flex-col pb-36 gap-10">
-
-                    {                        
+                    {
                         dataCollections.map((collection: any) => (
                             <Collection key={collection.id} name={collection.name} description={collection.description} products={collection.products} />
                         ))
                     }
-
                     <div className='w-full flex justify-center'>
                         <Link passHref href={"/products"}>
                             <button className="btn gap-2 max-w-fit">
@@ -49,7 +47,6 @@ const Collections: NextPage = () => {
                 </div>
             </main>
         </>
-
     );
 }
 

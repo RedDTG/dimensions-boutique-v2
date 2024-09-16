@@ -1,11 +1,11 @@
 {
-   "artists": [
+    "artists": [
         {
             "id": 0,
             "pseudo": "Red",
             "bio": "Diplôme d'artiste incompris, spécialisation Paint.net.",
             "image": "red.png",
-            "website": "https://github.com/RedDTG",
+            "website": "https://antoine.red",
             "instagram": "",
             "twitter": "",
             "youtube": "https://www.youtube.com/channel/UC0uU0FcUVOsQPUwjEiB_uqw",
@@ -65,5 +65,5 @@
             "artstation": "",
             "discord": ""
         }
-   ] 
+    ]
 }
