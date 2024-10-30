@@ -9,9 +9,9 @@ type ProductCardProps = {
 export const ProductCard: React.FC<ProductCardProps> = (props) => {
     return (
         <div className="card card-compact max-w-sm mx-10 md:mx-0 bg-base-100 shadow-xl border-2 border-base-300">
-            <figure><Image src={"/images/products/" + props.product.image} width={1799} height={1799} alt={props.product.title} className='w-full rounded-xl' /></figure>
+            <figure><Image src={"/images/products/" + props.product.image} width={1799} height={1799} alt={props.product.title} className='w-full rounded-2xl' /></figure>
             <Link passHref className="absolute h-full w-full" href={'/products/' + props.product.id}>
-                <div className="card card-body opacity-0 hover:opacity-100 hover:bg-opacity-90 h-full w-full bg-base-200 text-gray-200">
+                <div className="card card-body opacity-0 hover:opacity-100 hover:bg-opacity-90 h-full w-full rounded-xl bg-base-200 text-gray-200">
 
                     <h2 className="card-title pb-2">{props.product.title}</h2>
                     <p>{props.product.description}</p>

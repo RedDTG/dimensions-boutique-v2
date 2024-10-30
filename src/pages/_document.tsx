@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta name="robots" content="none" />
       </Head>
-      <body data-theme="dark" className='flex flex-col min-h-screen h-auto'>
+      <body data-theme="dark" className='min-h-screen h-auto'>
         <Main />
         <NextScript />
       </body>
